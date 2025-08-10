@@ -7,12 +7,13 @@ import AboutUs from './AboutUs';
 function App() {
   
   const [showProductList, setShowProductList] = useState(false);
+  const [addedToCart, setAddedToCart] = useState({});
 
-  const handleGetStartedClick = () => {
+  const handleGetStartedClick = () => { // to move from home page
     setShowProductList(true);
   };
 
-  const handleHomeClick = () => {
+  const handleHomeClick = () => { // to return to home page 
     setShowProductList(false);
   };
 
